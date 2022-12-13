@@ -10,10 +10,11 @@ function! socrates#detect_word_beginning() abort
 endfunction
 
 function! socrates#change_last_sigma() abort
-  if v:char !=# '' && matchstr(s:punctuations, v:char) !=# ''
+  if v:char !=# '' && matchstr(s:punctuations, v:char) !=# '' || &keymap !=? 'socrates'
     return
   endif
   let l:current_char = socrates#get_current_position_char()
+  echom l:current_char
   if l:current_char ==# "\<char-0x03C3>"
     execute "normal! r\<char-0x03C2>"
   endif
