@@ -32,6 +32,7 @@ function! socrates#change_last_sigma() abort
 endfunction
 
 function! socrates#get_current_position_char(int) abort
-  return nr2char(strgetchar(getline('.')[col('.') - a:int:], 0))
+  return matchstr(getline('.'), '\%'.col('.').'c.')
+  " return nr2char(strgetchar(getline('.')[col('.') - a:int:], 0))
 endfunction
 
