@@ -3,8 +3,5 @@ if exists('g:loaded_socrates') && g:loaded_socrates
 endif
 let g:loaded_socrates = v:true
 
-augroup Socrates
-  autocmd!
-  autocmd Hoge
-augroup END
+call socrates#detect_word_beginning()
 
