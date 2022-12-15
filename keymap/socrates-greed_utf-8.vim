@@ -1,4 +1,4 @@
-let b:keymap_name = "Socrates-Latin"
+let b:keymap_name = "SocratesGreed"
 
 loadkeymap
 A	<char-0x0391>	Capital Alpha
@@ -29,6 +29,8 @@ M	<char-0x039C>	Capital Mu
 M|	<char-0x039C>	Capital Mu
 N	<char-0x039D>	Capital Nu
 N|	<char-0x039D>	Capital Nu
+J	<char-0x039E>	Capital Xi
+J|	<char-0x039E>	Capital Xi
 KS	<char-0x039E>	Capital Xi
 KS|	<char-0x039E>	Capital Xi
 Ks	<char-0x039E>	Capital Xi
@@ -45,10 +47,16 @@ T	<char-0x03A4>	Capital Tau
 T|	<char-0x03A4>	Capital Tau
 Y	<char-0x03A5>	Capital Upsilon
 Y|	<char-0x03A5>	Capital Upsilon
+U	<char-0x03A5>	Capital Upsilon
+U|	<char-0x03A5>	Capital Upsilon
+F	<char-0x03A6>	Capital Phi
+F|	<char-0x03A6>	Capital Phi
 PH	<char-0x03A6>	Capital Phi
 PH|	<char-0x03A6>	Capital Phi
 Ph	<char-0x03A6>	Capital Phi
 Ph|	<char-0x03A6>	Capital Phi
+X	<char-0x03A7>	Capital Chi
+X|	<char-0x03A7>	Capital Chi
 CH	<char-0x03A7>	Capital Chi
 CH|	<char-0x03A7>	Capital Chi
 Ch	<char-0x03A7>	Capital Chi
@@ -59,6 +67,8 @@ Ps	<char-0x03A8>	Capital Psi
 Ps|	<char-0x03A8>	Capital Psi
 V	<char-0x03A9>	Capital Omega
 V|	<char-0x03A9>	Capital Omega
+W	<char-0x03A9>	Capital Omega
+W|	<char-0x03A9>	Capital Omega
 a	<char-0x03B1>	Small Alpha
 a|	<char-0x03B1>	Small Alpha
 b	<char-0x03B2>	Small Beta
@@ -85,6 +95,8 @@ m	<char-0x03BC>	Small Mu
 m|	<char-0x03BC>	Small Mu
 n	<char-0x03BD>	Small Nu
 n|	<char-0x03BD>	Small Nu
+j	<char-0x03BE>	Small Xi
+j|	<char-0x03BE>	Small Xi
 ks	<char-0x03BE>	Small Xi
 ks|	<char-0x03BE>	Small Xi
 o	<char-0x03BF>	Small Omicron
@@ -93,22 +105,28 @@ p	<char-0x03C0>	Small Pi
 p|	<char-0x03C0>	Small Pi
 r	<char-0x03C1>	Small Rho
 r|	<char-0x03C1>	Small Rho
-w	<char-0x03C2>	Small Final sigma
-w|	<char-0x03C2>	Small Final sigma
+c	<char-0x03C2>	Small Final sigma
+c|	<char-0x03C2>	Small Final sigma
 s	<char-0x03C3>	Small Sigma
 s|	<char-0x03C3>	Small Sigma
 t	<char-0x03C4>	Small Tau
 t|	<char-0x03C4>	Small Tau
 y	<char-0x03C5>	Small Upsilon
 y|	<char-0x03C5>	Small Upsilon
+f	<char-0x03C6>	Small Phi
+f|	<char-0x03C6>	Small Phi
 ph	<char-0x03C6>	Small Phi
 ph|	<char-0x03C6>	Small Phi
+x	<char-0x03C7>	Small Chi
+x|	<char-0x03C7>	Small Chi
 ch	<char-0x03C7>	Small Chi
 ch|	<char-0x03C7>	Small Chi
 ps	<char-0x03C8>	Small Psi
 ps|	<char-0x03C8>	Small Psi
 v	<char-0x03C9>	Small Omega
 v|	<char-0x03C9>	Small Omega
+w	<char-0x03C9>	Small Omega
+w|	<char-0x03C9>	Small Omega
 F/	<char-0x03DC>	Capital Digamma
 F/|	<char-0x03DC>	Capital Digamma
 M/	<char-0x03FA>	Capital San
@@ -917,6 +935,82 @@ y~"	<char-0x1FE7>	Small Upsilon with Diaeresis and Circumflex
 y~"|	<char-0x1FE7>	Small Upsilon with Diaeresis and Circumflex
 y"~	<char-0x1FE7>	Small Upsilon with Diaeresis and Circumflex
 y"~|	<char-0x1FE7>	Small Upsilon with Diaeresis and Circumflex
+U[	<char-0x1F59>	Capital Upsilon with Rough breathing
+U[|	<char-0x1F59>	Capital Upsilon with Rough breathing
+u]	<char-0x1F50>	Small Upsilon with Smooth breathing
+u]|	<char-0x1F50>	Small Upsilon with Smooth breathing
+u[	<char-0x1F51>	Small Upsilon with Rough breathing
+u[|	<char-0x1F51>	Small Upsilon with Rough breathing
+U`	<char-0x1FEA>	Capital Upsilon with Grave
+U`|	<char-0x1FEA>	Capital Upsilon with Grave
+U[`	<char-0x1F5B>	Capital Upsilon with Rough breathing and Grave
+U[`|	<char-0x1F5B>	Capital Upsilon with Rough breathing and Grave
+U`[	<char-0x1F5B>	Capital Upsilon with Rough breathing and Grave
+U`[|	<char-0x1F5B>	Capital Upsilon with Rough breathing and Grave
+u`	<char-0x1F7A>	Small Upsilon with Grave
+u`|	<char-0x1F7A>	Small Upsilon with Grave
+u]`	<char-0x1F52>	Small Upsilon with Smooth breathing and Grave
+u]`|	<char-0x1F52>	Small Upsilon with Smooth breathing and Grave
+u`]	<char-0x1F52>	Small Upsilon with Smooth breathing and Grave
+u`]|	<char-0x1F52>	Small Upsilon with Smooth breathing and Grave
+u[`	<char-0x1F53>	Small Upsilon with Rough breathing and Grave
+u[`|	<char-0x1F53>	Small Upsilon with Rough breathing and Grave
+u`[	<char-0x1F53>	Small Upsilon with Rough breathing and Grave
+u`[|	<char-0x1F53>	Small Upsilon with Rough breathing and Grave
+U'	<char-0x1FEB>	Capital Upsilon with Acute
+U'|	<char-0x1FEB>	Capital Upsilon with Acute
+U['	<char-0x1F5D>	Capital Upsilon with Rough breathing and Acute
+U['|	<char-0x1F5D>	Capital Upsilon with Rough breathing and Acute
+U'[	<char-0x1F5D>	Capital Upsilon with Rough breathing and Acute
+U'[|	<char-0x1F5D>	Capital Upsilon with Rough breathing and Acute
+u'	<char-0x1F7B>	Small Upsilon with Acute
+u'|	<char-0x1F7B>	Small Upsilon with Acute
+u]'	<char-0x1F54>	Small Upsilon with Smooth breathing and Acute
+u]'|	<char-0x1F54>	Small Upsilon with Smooth breathing and Acute
+u']	<char-0x1F54>	Small Upsilon with Smooth breathing and Acute
+u']|	<char-0x1F54>	Small Upsilon with Smooth breathing and Acute
+u['	<char-0x1F55>	Small Upsilon with Rough breathing and Acute
+u['|	<char-0x1F55>	Small Upsilon with Rough breathing and Acute
+u'[	<char-0x1F55>	Small Upsilon with Rough breathing and Acute
+u'[|	<char-0x1F55>	Small Upsilon with Rough breathing and Acute
+U[~	<char-0x1F5F>	Capital Upsilon with Rough breathing and Circumflex
+U[~|	<char-0x1F5F>	Capital Upsilon with Rough breathing and Circumflex
+U~[	<char-0x1F5F>	Capital Upsilon with Rough breathing and Circumflex
+U~[|	<char-0x1F5F>	Capital Upsilon with Rough breathing and Circumflex
+u~	<char-0x1FE6>	Small Upsilon with Circumflex
+u~|	<char-0x1FE6>	Small Upsilon with Circumflex
+u]~	<char-0x1F56>	Small Upsilon with Smooth breathing and Circumflex
+u]~|	<char-0x1F56>	Small Upsilon with Smooth breathing and Circumflex
+u~]	<char-0x1F56>	Small Upsilon with Smooth breathing and Circumflex
+u~]|	<char-0x1F56>	Small Upsilon with Smooth breathing and Circumflex
+u[~	<char-0x1F57>	Small Upsilon with Rough breathing and Circumflex
+u[~|	<char-0x1F57>	Small Upsilon with Rough breathing and Circumflex
+u~[	<char-0x1F57>	Small Upsilon with Rough breathing and Circumflex
+u~[|	<char-0x1F57>	Small Upsilon with Rough breathing and Circumflex
+U^	<char-0x1FE8>	Capital Upsilon with Breve
+U^|	<char-0x1FE8>	Capital Upsilon with Breve
+u^	<char-0x1FE0>	Small Upsilon with Breve
+u^|	<char-0x1FE0>	Small Upsilon with Breve
+u-	<char-0x1FE1>	Small Upsilon with Macron
+u-|	<char-0x1FE1>	Small Upsilon with Macron
+U-	<char-0x1FE9>	Capital Upsilon with Macron
+U-|	<char-0x1FE9>	Capital Upsilon with Macron
+U"	<char-0x03AB>	Capital Upsilon with Diaeresis
+U"|	<char-0x03AB>	Capital Upsilon with Diaeresis
+u"	<char-0x03CB>	Small Upsilon with Diaeresis
+u"|	<char-0x03CB>	Small Upsilon with Diaeresis
+u`"	<char-0x1FE2>	Small Upsilon with Diaeresis and Grave
+u`"|	<char-0x1FE2>	Small Upsilon with Diaeresis and Grave
+u"`	<char-0x1FE2>	Small Upsilon with Diaeresis and Grave
+u"`|	<char-0x1FE2>	Small Upsilon with Diaeresis and Grave
+u'"	<char-0x1FE3>	Small Upsilon with Diaeresis and Acute
+u'"|	<char-0x1FE3>	Small Upsilon with Diaeresis and Acute
+u"'	<char-0x1FE3>	Small Upsilon with Diaeresis and Acute
+u"'|	<char-0x1FE3>	Small Upsilon with Diaeresis and Acute
+u~"	<char-0x1FE7>	Small Upsilon with Diaeresis and Circumflex
+u~"|	<char-0x1FE7>	Small Upsilon with Diaeresis and Circumflex
+u"~	<char-0x1FE7>	Small Upsilon with Diaeresis and Circumflex
+u"~|	<char-0x1FE7>	Small Upsilon with Diaeresis and Circumflex
 V]	<char-0x1F68>	Capital Omega with Smooth breathing
 V]|	<char-0x1F68>	Capital Omega with Smooth breathing
 V[	<char-0x1F69>	Capital Omega with Rough breathing
@@ -1159,6 +1253,248 @@ v_[~	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota
 v_[~|	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
 v_~[	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
 v_~[|	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
+W]	<char-0x1F68>	Capital Omega with Smooth breathing
+W]|	<char-0x1F68>	Capital Omega with Smooth breathing
+W[	<char-0x1F69>	Capital Omega with Rough breathing
+W[|	<char-0x1F69>	Capital Omega with Rough breathing
+w]	<char-0x1F60>	Small Omega with Smooth breathing
+w]|	<char-0x1F60>	Small Omega with Smooth breathing
+w[	<char-0x1F61>	Small Omega with Rough breathing
+w[|	<char-0x1F61>	Small Omega with Rough breathing
+W`	<char-0x1FFA>	Capital Omega with Grave
+W`|	<char-0x1FFA>	Capital Omega with Grave
+W]`	<char-0x1F6A>	Capital Omega with Smooth breathing and Grave
+W]`|	<char-0x1F6A>	Capital Omega with Smooth breathing and Grave
+W`]	<char-0x1F6A>	Capital Omega with Smooth breathing and Grave
+W`]|	<char-0x1F6A>	Capital Omega with Smooth breathing and Grave
+W[`	<char-0x1F6B>	Capital Omega with Rough breathing and Grave
+W[`|	<char-0x1F6B>	Capital Omega with Rough breathing and Grave
+W`[	<char-0x1F6B>	Capital Omega with Rough breathing and Grave
+W`[|	<char-0x1F6B>	Capital Omega with Rough breathing and Grave
+w`	<char-0x1F7C>	Small Omega with Grave
+w`|	<char-0x1F7C>	Small Omega with Grave
+w]`	<char-0x1F62>	Small Omega with Smooth breathing and Grave
+w]`|	<char-0x1F62>	Small Omega with Smooth breathing and Grave
+w`]	<char-0x1F62>	Small Omega with Smooth breathing and Grave
+w`]|	<char-0x1F62>	Small Omega with Smooth breathing and Grave
+w[`	<char-0x1F63>	Small Omega with Rough breathing and Grave
+w[`|	<char-0x1F63>	Small Omega with Rough breathing and Grave
+w`[	<char-0x1F63>	Small Omega with Rough breathing and Grave
+w`[|	<char-0x1F63>	Small Omega with Rough breathing and Grave
+W'	<char-0x1FFB>	Capital Omega with Acute
+W'|	<char-0x1FFB>	Capital Omega with Acute
+W]'	<char-0x1F6C>	Capital Omega with Smooth breathing and Acute
+W]'|	<char-0x1F6C>	Capital Omega with Smooth breathing and Acute
+W']	<char-0x1F6C>	Capital Omega with Smooth breathing and Acute
+W']|	<char-0x1F6C>	Capital Omega with Smooth breathing and Acute
+W['	<char-0x1F6D>	Capital Omega with Rough breathing and Acute
+W['|	<char-0x1F6D>	Capital Omega with Rough breathing and Acute
+W'[	<char-0x1F6D>	Capital Omega with Rough breathing and Acute
+W'[|	<char-0x1F6D>	Capital Omega with Rough breathing and Acute
+w'	<char-0x1F7D>	Small Omega with Acute
+w'|	<char-0x1F7D>	Small Omega with Acute
+w]'	<char-0x1F64>	Small Omega with Smooth breathing and Acute
+w]'|	<char-0x1F64>	Small Omega with Smooth breathing and Acute
+w']	<char-0x1F64>	Small Omega with Smooth breathing and Acute
+w']|	<char-0x1F64>	Small Omega with Smooth breathing and Acute
+w['	<char-0x1F65>	Small Omega with Rough breathing and Acute
+w['|	<char-0x1F65>	Small Omega with Rough breathing and Acute
+w'[	<char-0x1F65>	Small Omega with Rough breathing and Acute
+w'[|	<char-0x1F65>	Small Omega with Rough breathing and Acute
+W]~	<char-0x1F6E>	Capital Omega with Smooth breathing and Circumflex
+W]~|	<char-0x1F6E>	Capital Omega with Smooth breathing and Circumflex
+W~]	<char-0x1F6E>	Capital Omega with Smooth breathing and Circumflex
+W~]|	<char-0x1F6E>	Capital Omega with Smooth breathing and Circumflex
+W[~	<char-0x1F6F>	Capital Omega with Rough breathing and Circumflex
+W[~|	<char-0x1F6F>	Capital Omega with Rough breathing and Circumflex
+W~[	<char-0x1F6F>	Capital Omega with Rough breathing and Circumflex
+W~[|	<char-0x1F6F>	Capital Omega with Rough breathing and Circumflex
+w~	<char-0x1FF6>	Small Omega with Circumflex
+w~|	<char-0x1FF6>	Small Omega with Circumflex
+w]~	<char-0x1F66>	Small Omega with Smooth breathing and Circumflex
+w]~|	<char-0x1F66>	Small Omega with Smooth breathing and Circumflex
+w~]	<char-0x1F66>	Small Omega with Smooth breathing and Circumflex
+w~]|	<char-0x1F66>	Small Omega with Smooth breathing and Circumflex
+w[~	<char-0x1F67>	Small Omega with Rough breathing and Circumflex
+w[~|	<char-0x1F67>	Small Omega with Rough breathing and Circumflex
+w~[	<char-0x1F67>	Small Omega with Rough breathing and Circumflex
+w~[|	<char-0x1F67>	Small Omega with Rough breathing and Circumflex
+W_	<char-0x1FFC>	Capital Omega with with Iota adscript
+W_|	<char-0x1FFC>	Capital Omega with with Iota adscript
+W]_	<char-0x1FA8>	Capital Omega with Smooth breathing and with Iota adscript
+W]_|	<char-0x1FA8>	Capital Omega with Smooth breathing and with Iota adscript
+W_]	<char-0x1FA8>	Capital Omega with Smooth breathing and with Iota adscript
+W_]|	<char-0x1FA8>	Capital Omega with Smooth breathing and with Iota adscript
+W[_	<char-0x1FA9>	Capital Omega with Rough breathing and with Iota adscript
+W[_|	<char-0x1FA9>	Capital Omega with Rough breathing and with Iota adscript
+W_[	<char-0x1FA9>	Capital Omega with Rough breathing and with Iota adscript
+W_[|	<char-0x1FA9>	Capital Omega with Rough breathing and with Iota adscript
+w_	<char-0x1FF3>	Small Omega with with Iota subscript
+w_|	<char-0x1FF3>	Small Omega with with Iota subscript
+w]_	<char-0x1FA0>	Small Omega with Smooth breathing and with Iota subscript
+w]_|	<char-0x1FA0>	Small Omega with Smooth breathing and with Iota subscript
+w_]	<char-0x1FA0>	Small Omega with Smooth breathing and with Iota subscript
+w_]|	<char-0x1FA0>	Small Omega with Smooth breathing and with Iota subscript
+w[_	<char-0x1FA1>	Small Omega with Rough breathing and with Iota subscript
+w[_|	<char-0x1FA1>	Small Omega with Rough breathing and with Iota subscript
+w_[	<char-0x1FA1>	Small Omega with Rough breathing and with Iota subscript
+w_[|	<char-0x1FA1>	Small Omega with Rough breathing and with Iota subscript
+W]`_	<char-0x1FAA>	Capital Omega with Smooth breathing and Grave and with Iota adscript
+W]`_|	<char-0x1FAA>	Capital Omega with Smooth breathing and Grave and with Iota adscript
+W]_`	<char-0x1FAA>	Capital Omega with Smooth breathing and Grave and with Iota adscript
+W]_`|	<char-0x1FAA>	Capital Omega with Smooth breathing and Grave and with Iota adscript
+W`]_	<char-0x1FAA>	Capital Omega with Smooth breathing and Grave and with Iota adscript
+W`]_|	<char-0x1FAA>	Capital Omega with Smooth breathing and Grave and with Iota adscript
+W`_]	<char-0x1FAA>	Capital Omega with Smooth breathing and Grave and with Iota adscript
+W`_]|	<char-0x1FAA>	Capital Omega with Smooth breathing and Grave and with Iota adscript
+W_]`	<char-0x1FAA>	Capital Omega with Smooth breathing and Grave and with Iota adscript
+W_]`|	<char-0x1FAA>	Capital Omega with Smooth breathing and Grave and with Iota adscript
+W_`]	<char-0x1FAA>	Capital Omega with Smooth breathing and Grave and with Iota adscript
+W_`]|	<char-0x1FAA>	Capital Omega with Smooth breathing and Grave and with Iota adscript
+W[`_	<char-0x1FAB>	Capital Omega with Rough breathing and Grave and with Iota adscript
+W[`_|	<char-0x1FAB>	Capital Omega with Rough breathing and Grave and with Iota adscript
+W[_`	<char-0x1FAB>	Capital Omega with Rough breathing and Grave and with Iota adscript
+W[_`|	<char-0x1FAB>	Capital Omega with Rough breathing and Grave and with Iota adscript
+W`[_	<char-0x1FAB>	Capital Omega with Rough breathing and Grave and with Iota adscript
+W`[_|	<char-0x1FAB>	Capital Omega with Rough breathing and Grave and with Iota adscript
+W`_[	<char-0x1FAB>	Capital Omega with Rough breathing and Grave and with Iota adscript
+W`_[|	<char-0x1FAB>	Capital Omega with Rough breathing and Grave and with Iota adscript
+W_[`	<char-0x1FAB>	Capital Omega with Rough breathing and Grave and with Iota adscript
+W_[`|	<char-0x1FAB>	Capital Omega with Rough breathing and Grave and with Iota adscript
+W_`[	<char-0x1FAB>	Capital Omega with Rough breathing and Grave and with Iota adscript
+W_`[|	<char-0x1FAB>	Capital Omega with Rough breathing and Grave and with Iota adscript
+w`_	<char-0x1FF2>	Small Omega with Grave and with Iota subscript
+w`_|	<char-0x1FF2>	Small Omega with Grave and with Iota subscript
+w_`	<char-0x1FF2>	Small Omega with Grave and with Iota subscript
+w_`|	<char-0x1FF2>	Small Omega with Grave and with Iota subscript
+w]`_	<char-0x1FA2>	Small Omega with Smooth breathing and Grave and with Iota subscript
+w]`_|	<char-0x1FA2>	Small Omega with Smooth breathing and Grave and with Iota subscript
+w]_`	<char-0x1FA2>	Small Omega with Smooth breathing and Grave and with Iota subscript
+w]_`|	<char-0x1FA2>	Small Omega with Smooth breathing and Grave and with Iota subscript
+w`]_	<char-0x1FA2>	Small Omega with Smooth breathing and Grave and with Iota subscript
+w`]_|	<char-0x1FA2>	Small Omega with Smooth breathing and Grave and with Iota subscript
+w`_]	<char-0x1FA2>	Small Omega with Smooth breathing and Grave and with Iota subscript
+w`_]|	<char-0x1FA2>	Small Omega with Smooth breathing and Grave and with Iota subscript
+w_]`	<char-0x1FA2>	Small Omega with Smooth breathing and Grave and with Iota subscript
+w_]`|	<char-0x1FA2>	Small Omega with Smooth breathing and Grave and with Iota subscript
+w_`]	<char-0x1FA2>	Small Omega with Smooth breathing and Grave and with Iota subscript
+w_`]|	<char-0x1FA2>	Small Omega with Smooth breathing and Grave and with Iota subscript
+w[`_	<char-0x1FA3>	Small Omega with Rough breathing and Grave and with Iota subscript
+w[`_|	<char-0x1FA3>	Small Omega with Rough breathing and Grave and with Iota subscript
+w[_`	<char-0x1FA3>	Small Omega with Rough breathing and Grave and with Iota subscript
+w[_`|	<char-0x1FA3>	Small Omega with Rough breathing and Grave and with Iota subscript
+w`[_	<char-0x1FA3>	Small Omega with Rough breathing and Grave and with Iota subscript
+w`[_|	<char-0x1FA3>	Small Omega with Rough breathing and Grave and with Iota subscript
+w`_[	<char-0x1FA3>	Small Omega with Rough breathing and Grave and with Iota subscript
+w`_[|	<char-0x1FA3>	Small Omega with Rough breathing and Grave and with Iota subscript
+w_[`	<char-0x1FA3>	Small Omega with Rough breathing and Grave and with Iota subscript
+w_[`|	<char-0x1FA3>	Small Omega with Rough breathing and Grave and with Iota subscript
+w_`[	<char-0x1FA3>	Small Omega with Rough breathing and Grave and with Iota subscript
+w_`[|	<char-0x1FA3>	Small Omega with Rough breathing and Grave and with Iota subscript
+W]'_	<char-0x1FAC>	Capital Omega with Smooth breathing and Acute and with Iota adscript
+W]'_|	<char-0x1FAC>	Capital Omega with Smooth breathing and Acute and with Iota adscript
+W]_'	<char-0x1FAC>	Capital Omega with Smooth breathing and Acute and with Iota adscript
+W]_'|	<char-0x1FAC>	Capital Omega with Smooth breathing and Acute and with Iota adscript
+W']_	<char-0x1FAC>	Capital Omega with Smooth breathing and Acute and with Iota adscript
+W']_|	<char-0x1FAC>	Capital Omega with Smooth breathing and Acute and with Iota adscript
+W'_]	<char-0x1FAC>	Capital Omega with Smooth breathing and Acute and with Iota adscript
+W'_]|	<char-0x1FAC>	Capital Omega with Smooth breathing and Acute and with Iota adscript
+W_]'	<char-0x1FAC>	Capital Omega with Smooth breathing and Acute and with Iota adscript
+W_]'|	<char-0x1FAC>	Capital Omega with Smooth breathing and Acute and with Iota adscript
+W_']	<char-0x1FAC>	Capital Omega with Smooth breathing and Acute and with Iota adscript
+W_']|	<char-0x1FAC>	Capital Omega with Smooth breathing and Acute and with Iota adscript
+W['_	<char-0x1FAD>	Capital Omega with Rough breathing and Acute and with Iota adscript
+W['_|	<char-0x1FAD>	Capital Omega with Rough breathing and Acute and with Iota adscript
+W[_'	<char-0x1FAD>	Capital Omega with Rough breathing and Acute and with Iota adscript
+W[_'|	<char-0x1FAD>	Capital Omega with Rough breathing and Acute and with Iota adscript
+W'[_	<char-0x1FAD>	Capital Omega with Rough breathing and Acute and with Iota adscript
+W'[_|	<char-0x1FAD>	Capital Omega with Rough breathing and Acute and with Iota adscript
+W'_[	<char-0x1FAD>	Capital Omega with Rough breathing and Acute and with Iota adscript
+W'_[|	<char-0x1FAD>	Capital Omega with Rough breathing and Acute and with Iota adscript
+W_['	<char-0x1FAD>	Capital Omega with Rough breathing and Acute and with Iota adscript
+W_['|	<char-0x1FAD>	Capital Omega with Rough breathing and Acute and with Iota adscript
+W_'[	<char-0x1FAD>	Capital Omega with Rough breathing and Acute and with Iota adscript
+W_'[|	<char-0x1FAD>	Capital Omega with Rough breathing and Acute and with Iota adscript
+w'_	<char-0x1FF4>	Small Omega with Acute and with Iota subscript
+w'_|	<char-0x1FF4>	Small Omega with Acute and with Iota subscript
+w_'	<char-0x1FF4>	Small Omega with Acute and with Iota subscript
+w_'|	<char-0x1FF4>	Small Omega with Acute and with Iota subscript
+w]'_	<char-0x1FA4>	Small Omega with Smooth breathing and Acute and with Iota subscript
+w]'_|	<char-0x1FA4>	Small Omega with Smooth breathing and Acute and with Iota subscript
+w]_'	<char-0x1FA4>	Small Omega with Smooth breathing and Acute and with Iota subscript
+w]_'|	<char-0x1FA4>	Small Omega with Smooth breathing and Acute and with Iota subscript
+w']_	<char-0x1FA4>	Small Omega with Smooth breathing and Acute and with Iota subscript
+w']_|	<char-0x1FA4>	Small Omega with Smooth breathing and Acute and with Iota subscript
+w'_]	<char-0x1FA4>	Small Omega with Smooth breathing and Acute and with Iota subscript
+w'_]|	<char-0x1FA4>	Small Omega with Smooth breathing and Acute and with Iota subscript
+w_]'	<char-0x1FA4>	Small Omega with Smooth breathing and Acute and with Iota subscript
+w_]'|	<char-0x1FA4>	Small Omega with Smooth breathing and Acute and with Iota subscript
+w_']	<char-0x1FA4>	Small Omega with Smooth breathing and Acute and with Iota subscript
+w_']|	<char-0x1FA4>	Small Omega with Smooth breathing and Acute and with Iota subscript
+w['_	<char-0x1FA5>	Small Omega with Rough breathing and Acute and with Iota subscript
+w['_|	<char-0x1FA5>	Small Omega with Rough breathing and Acute and with Iota subscript
+w[_'	<char-0x1FA5>	Small Omega with Rough breathing and Acute and with Iota subscript
+w[_'|	<char-0x1FA5>	Small Omega with Rough breathing and Acute and with Iota subscript
+w'[_	<char-0x1FA5>	Small Omega with Rough breathing and Acute and with Iota subscript
+w'[_|	<char-0x1FA5>	Small Omega with Rough breathing and Acute and with Iota subscript
+w'_[	<char-0x1FA5>	Small Omega with Rough breathing and Acute and with Iota subscript
+w'_[|	<char-0x1FA5>	Small Omega with Rough breathing and Acute and with Iota subscript
+w_['	<char-0x1FA5>	Small Omega with Rough breathing and Acute and with Iota subscript
+w_['|	<char-0x1FA5>	Small Omega with Rough breathing and Acute and with Iota subscript
+w_'[	<char-0x1FA5>	Small Omega with Rough breathing and Acute and with Iota subscript
+w_'[|	<char-0x1FA5>	Small Omega with Rough breathing and Acute and with Iota subscript
+W]~_	<char-0x1FAE>	Capital Omega with Smooth breathing and Circumflex and with Iota adscript
+W]~_|	<char-0x1FAE>	Capital Omega with Smooth breathing and Circumflex and with Iota adscript
+W]_~	<char-0x1FAE>	Capital Omega with Smooth breathing and Circumflex and with Iota adscript
+W]_~|	<char-0x1FAE>	Capital Omega with Smooth breathing and Circumflex and with Iota adscript
+W~]_	<char-0x1FAE>	Capital Omega with Smooth breathing and Circumflex and with Iota adscript
+W~]_|	<char-0x1FAE>	Capital Omega with Smooth breathing and Circumflex and with Iota adscript
+W~_]	<char-0x1FAE>	Capital Omega with Smooth breathing and Circumflex and with Iota adscript
+W~_]|	<char-0x1FAE>	Capital Omega with Smooth breathing and Circumflex and with Iota adscript
+W_]~	<char-0x1FAE>	Capital Omega with Smooth breathing and Circumflex and with Iota adscript
+W_]~|	<char-0x1FAE>	Capital Omega with Smooth breathing and Circumflex and with Iota adscript
+W_~]	<char-0x1FAE>	Capital Omega with Smooth breathing and Circumflex and with Iota adscript
+W_~]|	<char-0x1FAE>	Capital Omega with Smooth breathing and Circumflex and with Iota adscript
+W[~_	<char-0x1FAF>	Capital Omega with Rough breathing and Circumflex and with Iota adscript
+W[~_|	<char-0x1FAF>	Capital Omega with Rough breathing and Circumflex and with Iota adscript
+W[_~	<char-0x1FAF>	Capital Omega with Rough breathing and Circumflex and with Iota adscript
+W[_~|	<char-0x1FAF>	Capital Omega with Rough breathing and Circumflex and with Iota adscript
+W~[_	<char-0x1FAF>	Capital Omega with Rough breathing and Circumflex and with Iota adscript
+W~[_|	<char-0x1FAF>	Capital Omega with Rough breathing and Circumflex and with Iota adscript
+W~_[	<char-0x1FAF>	Capital Omega with Rough breathing and Circumflex and with Iota adscript
+W~_[|	<char-0x1FAF>	Capital Omega with Rough breathing and Circumflex and with Iota adscript
+W_[~	<char-0x1FAF>	Capital Omega with Rough breathing and Circumflex and with Iota adscript
+W_[~|	<char-0x1FAF>	Capital Omega with Rough breathing and Circumflex and with Iota adscript
+W_~[	<char-0x1FAF>	Capital Omega with Rough breathing and Circumflex and with Iota adscript
+W_~[|	<char-0x1FAF>	Capital Omega with Rough breathing and Circumflex and with Iota adscript
+w~_	<char-0x1FF7>	Small Omega with Circumflex and with Iota subscript
+w~_|	<char-0x1FF7>	Small Omega with Circumflex and with Iota subscript
+w_~	<char-0x1FF7>	Small Omega with Circumflex and with Iota subscript
+w_~|	<char-0x1FF7>	Small Omega with Circumflex and with Iota subscript
+w]~_	<char-0x1FA6>	Small Omega with Smooth breathing and Circumflex and with Iota subscript
+w]~_|	<char-0x1FA6>	Small Omega with Smooth breathing and Circumflex and with Iota subscript
+w]_~	<char-0x1FA6>	Small Omega with Smooth breathing and Circumflex and with Iota subscript
+w]_~|	<char-0x1FA6>	Small Omega with Smooth breathing and Circumflex and with Iota subscript
+w~]_	<char-0x1FA6>	Small Omega with Smooth breathing and Circumflex and with Iota subscript
+w~]_|	<char-0x1FA6>	Small Omega with Smooth breathing and Circumflex and with Iota subscript
+w~_]	<char-0x1FA6>	Small Omega with Smooth breathing and Circumflex and with Iota subscript
+w~_]|	<char-0x1FA6>	Small Omega with Smooth breathing and Circumflex and with Iota subscript
+w_]~	<char-0x1FA6>	Small Omega with Smooth breathing and Circumflex and with Iota subscript
+w_]~|	<char-0x1FA6>	Small Omega with Smooth breathing and Circumflex and with Iota subscript
+w_~]	<char-0x1FA6>	Small Omega with Smooth breathing and Circumflex and with Iota subscript
+w_~]|	<char-0x1FA6>	Small Omega with Smooth breathing and Circumflex and with Iota subscript
+w[~_	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
+w[~_|	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
+w[_~	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
+w[_~|	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
+w~[_	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
+w~[_|	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
+w~_[	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
+w~_[|	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
+w_[~	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
+w_[~|	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
+w_~[	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
+w_~[|	<char-0x1FA7>	Small Omega with Rough breathing and Circumflex and with Iota subscript
 ?	<char-0x037E>	Greek Question Mark
 ?|	<char-0x037E>	Greek Question Mark
 ;	<char-0x0387>	Greek Ano Teleia
