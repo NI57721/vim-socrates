@@ -3,10 +3,6 @@ let s:assert = themis#helper('assert')
 let s:scope = themis#helper('scope')
 let s:funcs = s:scope.funcs('autoload/socrates.vim')
 
-function! s:suite.test_name() abort
-  call s:assert.equals(1 + 3, 4)
-endfunction
-
 function! s:detect_if_rhos_have_any_signatures() abort
   let l:simple_rhos = ["\<char-0x03A1>", "\<char-0x03C1>"]
   let l:rhos_with_signatures = [
