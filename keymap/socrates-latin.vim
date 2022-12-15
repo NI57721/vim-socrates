@@ -1,4 +1,4 @@
-let b:keymap_name = "Socrates"
+let b:keymap_name = "Socrates-Latin"
 
 loadkeymap
 A	<char-0x0391>	Capital Alpha
@@ -15,8 +15,10 @@ Z	<char-0x0396>	Capital Zeta
 Z|	<char-0x0396>	Capital Zeta
 H	<char-0x0397>	Capital Eta
 H|	<char-0x0397>	Capital Eta
-U	<char-0x0398>	Capital Theta
-U|	<char-0x0398>	Capital Theta
+TH	<char-0x0398>	Capital Theta
+TH|	<char-0x0398>	Capital Theta
+Th	<char-0x0398>	Capital Theta
+Th|	<char-0x0398>	Capital Theta
 I	<char-0x0399>	Capital Iota
 I|	<char-0x0399>	Capital Iota
 K	<char-0x039A>	Capital Kappa
@@ -27,8 +29,10 @@ M	<char-0x039C>	Capital Mu
 M|	<char-0x039C>	Capital Mu
 N	<char-0x039D>	Capital Nu
 N|	<char-0x039D>	Capital Nu
-J	<char-0x039E>	Capital Xi
-J|	<char-0x039E>	Capital Xi
+KS	<char-0x039E>	Capital Xi
+KS|	<char-0x039E>	Capital Xi
+Ks	<char-0x039E>	Capital Xi
+Ks|	<char-0x039E>	Capital Xi
 O	<char-0x039F>	Capital Omicron
 O|	<char-0x039F>	Capital Omicron
 P	<char-0x03A0>	Capital Pi
@@ -41,12 +45,18 @@ T	<char-0x03A4>	Capital Tau
 T|	<char-0x03A4>	Capital Tau
 Y	<char-0x03A5>	Capital Upsilon
 Y|	<char-0x03A5>	Capital Upsilon
-F	<char-0x03A6>	Capital Phi
-F|	<char-0x03A6>	Capital Phi
-X	<char-0x03A7>	Capital Chi
-X|	<char-0x03A7>	Capital Chi
-C	<char-0x03A8>	Capital Psi
-C|	<char-0x03A8>	Capital Psi
+PH	<char-0x03A6>	Capital Phi
+PH|	<char-0x03A6>	Capital Phi
+Ph	<char-0x03A6>	Capital Phi
+Ph|	<char-0x03A6>	Capital Phi
+CH	<char-0x03A7>	Capital Chi
+CH|	<char-0x03A7>	Capital Chi
+Ch	<char-0x03A7>	Capital Chi
+Ch|	<char-0x03A7>	Capital Chi
+PS	<char-0x03A8>	Capital Psi
+PS|	<char-0x03A8>	Capital Psi
+Ps	<char-0x03A8>	Capital Psi
+Ps|	<char-0x03A8>	Capital Psi
 V	<char-0x03A9>	Capital Omega
 V|	<char-0x03A9>	Capital Omega
 a	<char-0x03B1>	Small Alpha
@@ -63,8 +73,8 @@ z	<char-0x03B6>	Small Zeta
 z|	<char-0x03B6>	Small Zeta
 h	<char-0x03B7>	Small Eta
 h|	<char-0x03B7>	Small Eta
-u	<char-0x03B8>	Small Theta
-u|	<char-0x03B8>	Small Theta
+th	<char-0x03B8>	Small Theta
+th|	<char-0x03B8>	Small Theta
 i	<char-0x03B9>	Small Iota
 i|	<char-0x03B9>	Small Iota
 k	<char-0x03BA>	Small Kappa
@@ -75,8 +85,8 @@ m	<char-0x03BC>	Small Mu
 m|	<char-0x03BC>	Small Mu
 n	<char-0x03BD>	Small Nu
 n|	<char-0x03BD>	Small Nu
-j	<char-0x03BE>	Small Xi
-j|	<char-0x03BE>	Small Xi
+ks	<char-0x03BE>	Small Xi
+ks|	<char-0x03BE>	Small Xi
 o	<char-0x03BF>	Small Omicron
 o|	<char-0x03BF>	Small Omicron
 p	<char-0x03C0>	Small Pi
@@ -91,12 +101,12 @@ t	<char-0x03C4>	Small Tau
 t|	<char-0x03C4>	Small Tau
 y	<char-0x03C5>	Small Upsilon
 y|	<char-0x03C5>	Small Upsilon
-f	<char-0x03C6>	Small Phi
-f|	<char-0x03C6>	Small Phi
-x	<char-0x03C7>	Small Chi
-x|	<char-0x03C7>	Small Chi
-c	<char-0x03C8>	Small Psi
-c|	<char-0x03C8>	Small Psi
+ph	<char-0x03C6>	Small Phi
+ph|	<char-0x03C6>	Small Phi
+ch	<char-0x03C7>	Small Chi
+ch|	<char-0x03C7>	Small Chi
+ps	<char-0x03C8>	Small Psi
+ps|	<char-0x03C8>	Small Psi
 v	<char-0x03C9>	Small Omega
 v|	<char-0x03C9>	Small Omega
 F/	<char-0x03DC>	Capital Digamma
@@ -145,8 +155,14 @@ r]	<char-0x1FE4>	Small Rho with Smooth breathing
 r]|	<char-0x1FE4>	Small Rho with Smooth breathing
 R[	<char-0x1FEC>	Capital Rho with Rough breathing
 R[|	<char-0x1FEC>	Capital Rho with Rough breathing
+RH	<char-0x1FEC>	Capital Rho with Rough breathing
+RH|	<char-0x1FEC>	Capital Rho with Rough breathing
+Rh	<char-0x1FEC>	Capital Rho with Rough breathing
+Rh|	<char-0x1FEC>	Capital Rho with Rough breathing
 r[	<char-0x1FE5>	Small Rho with Rough breathing
 r[|	<char-0x1FE5>	Small Rho with Rough breathing
+rh	<char-0x1FE5>	Small Rho with Rough breathing
+rh|	<char-0x1FE5>	Small Rho with Rough breathing
 A]	<char-0x1F08>	Capital Alpha with Smooth breathing
 A]|	<char-0x1F08>	Capital Alpha with Smooth breathing
 A[	<char-0x1F09>	Capital Alpha with Rough breathing

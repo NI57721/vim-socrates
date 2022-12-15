@@ -3,5 +3,7 @@ if exists('g:loaded_socrates') && g:loaded_socrates
 endif
 let g:loaded_socrates = v:true
 
-call socrates#detect_word_beginning()
+if exists('g:socrates_smart_checker') && g:socrates_smart_checker
+  call socrates#enable_smart_checker()
+endif
 

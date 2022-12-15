@@ -1,38 +1,101 @@
 
-let s:punctuations = ',.''";:?'
+let s:punctuations = ",.'\";:? \<char-0x037E>\<char-0x0387>\<char-0x00FF>"
 
-function! socrates#detect_word_beginning() abort
+function! socrates#latinise_keymaps() abort
   augroup Socrates
     autocmd!
-    autocmd InsertCharPre * call socrates#change_last_sigma()
-    autocmd InsertLeave   * call socrates#change_last_sigma()
+    autocmd OptionSet keymap
+      \ if &keymap ==? 'socrates' |
+      \   call socrates#latinise_keymaps() |
+      \ endif
   augroup END
 endfunction
 
-function! socrates#change_last_sigma() abort
-  if v:char !=# '' && matchstr(s:punctuations, v:char) !=# '' || &keymap !=? 'socrates'
+function! socrates#enable_smart_checker() abort
+  augroup Socrates
+    autocmd!
+    autocmd TextChangedI *
+      \ if &keymap =~? '^socrates' |
+      \   call socrates#change_last_sigma() |
+      \ endif
+    autocmd InsertCharPre *
+      \ if &keymap =~? '^socrates' |
+      \   call socrates#change_first_pho() |
+      \ endif
+    autocmd InsertLeave  *
+      \ if &keymap =~? '^socrates' |
+      \   call socrates#change_last_sigma_when_leaving_insert() |
+      \ endif
+  augroup END
+endfunction
+
+" Change a sigma with a final-sigma if cursor is just on the sigma that is the
+" last character of the current line when you leave from insert mode.
+function! socrates#change_last_sigma_when_leaving_insert() abort
+  if v:char !=# '' || !s:is_cursor_at_line_end_in_normal_mode()
     return
   endif
-  let l:current_char = socrates#get_current_position_char(1)
-  let l:current_char2 = socrates#get_current_position_char(2)
-  let l:current_char3 = socrates#get_current_position_char(3)
-  echom 'char:  ' l:current_char
-  echom 'char2: ' l:current_char2
-  echom 'char3: ' l:current_char3
-  " Failed to get multi byte characters...
-  if l:current_char ==# "\<char-0x03C3>"
-    execute "normal! r\<char-0x03C2>"
-  endif
-  if l:current_char2 ==# "\<char-0x03C3>"
-    execute "normal! r\<char-0x03C2>"
-  endif
-  if l:current_char3 ==# "\<char-0x03C3>"
+  " U+03C3: Small sigma, U+03C2: Final Sigma.
+  if s:get_char_from_line_end() ==# "\<char-0x03C3>"
     execute "normal! r\<char-0x03C2>"
   endif
 endfunction
 
-function! socrates#get_current_position_char(int) abort
-  return matchstr(getline('.'), '\%'.(col('.') - a:int).'c.')
-  " return nr2char(strgetchar(getline('.')[col('.') - a:int:], 0))
+" Change a sigma with a final-sigma if you type one of punctuations in insert
+" mode.
+function! socrates#change_last_sigma() abort
+  let l:current_char        = s:get_char_before_cursor(2)
+  if matchstr(s:punctuations, l:current_char) ==# ''
+    return
+  endif
+
+  let l:char_before_cursor = s:get_char_before_cursor(3)
+  let l:is_at_line_end     = s:is_cursor_at_line_end_in_insert_mode()
+  " U+03C3: Small sigma, U+03C2: Final Sigma.
+  if l:char_before_cursor ==# "\<char-0x03C3>"
+    execute "normal! hhr\<char-0x03C2>ll"
+    if l:is_at_line_end
+      call feedkeys("\<right>", 'nit')
+    endif
+  endif
+endfunction
+
+" Add a rough breathing mark on a rho, if the rho has no breathing mark and is
+" at the beginning of a word.
+function! socrates#change_first_pho() abort
+  let l:current_char        = s:get_char_before_cursor(2)
+  if !s:is_simple_rho(v:char) || matchstr(s:punctuations, l:current_char) ==# ''
+    return
+  endif
+
+  " Capital Rho: U+03A1, Capital Rho with rough breathing: U+1FEC
+  "   Small Rho: U+03C1,   small Rho with rough breathing: U+1FE5
+  if v:char ==# "\<char-0x03A1>"
+    let v:char = "\<char-0x1FEC>"
+  elseif v:char ==# "\<char-0x03C1>"
+    let v:char = "\<char-0x1FE5>"
+  endif
+endfunction
+
+function! s:is_simple_rho(char) abort
+  return a:char ==# "\<char-0x03A1>" || a:char ==# "\<char-0x03C1>"
+endfunction
+
+" Get a character before the cursor.
+function! s:get_char_before_cursor(offset = 1) abort
+  return nr2char(strgetchar(getline('.'), charcol('.') - a:offset))
+endfunction
+
+function! s:get_char_from_line_end(offset = 1) abort
+  let l:current_line = getline('.')
+  return nr2char(strgetchar(current_line, strchars(current_line) - a:offset))
+endfunction
+
+function! s:is_cursor_at_line_end_in_normal_mode() abort
+  return charcol('.') == strchars(getline('.'))
+endfunction
+
+function! s:is_cursor_at_line_end_in_insert_mode() abort
+  return charcol('.') == strchars(getline('.')) + 1
 endfunction
 
