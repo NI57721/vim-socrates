@@ -44,12 +44,12 @@ endfunction
 " Change a sigma with a final-sigma if you type one of punctuations in insert
 " mode.
 function! socrates#change_last_sigma() abort
-  let l:current_char        = s:get_char_before_cursor(2)
+  let l:current_char        = s:get_nth_char_from(getline('.'), charcol('.') - 2)
   if matchstr(s:punctuations, l:current_char) ==# ''
     return
   endif
 
-  let l:char_before_cursor = s:get_char_before_cursor(3)
+  let l:char_before_cursor = s:get_nth_char_from(getline('.'), charcol('.') - 3)
   let l:is_at_line_end     = s:is_cursor_at_line_end_in_insert_mode()
   " U+03C3: Small sigma, U+03C2: Final Sigma.
   if l:char_before_cursor ==# "\<char-0x03C3>"
@@ -63,7 +63,7 @@ endfunction
 " Add a rough breathing mark on a rho, if the rho has no breathing mark and is
 " at the beginning of a word.
 function! socrates#change_first_pho() abort
-  let l:current_char        = s:get_char_before_cursor(2)
+  let l:current_char        = s:get_nth_char_from(getline('.'), charcol('.') - 2)
   if !s:is_simple_rho(v:char) || matchstr(s:punctuations, l:current_char) ==# ''
     return
   endif
@@ -81,9 +81,8 @@ function! s:is_simple_rho(char) abort
   return a:char ==# "\<char-0x03A1>" || a:char ==# "\<char-0x03C1>"
 endfunction
 
-" Get a character before the cursor.
-function! s:get_char_before_cursor(offset = 1) abort
-  return nr2char(strgetchar(getline('.'), charcol('.') - a:offset))
+function! s:get_nth_char_from(str, n) abort
+  return nr2char(strgetchar(a:str, a:n))
 endfunction
 
 function! s:get_char_from_line_end(offset = 1) abort
