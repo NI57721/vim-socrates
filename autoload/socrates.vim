@@ -4,15 +4,15 @@ function! socrates#enable_smart_mode() abort
   augroup Socrates
     autocmd!
     autocmd TextChangedI *
-      \ if &keymap =~? '^socrates' |
+      \ if &keymap =~# '^socrates' |
       \   call s:change_last_sigma() |
       \ endif
     autocmd InsertCharPre *
-      \ if &keymap =~? '^socrates' |
+      \ if &keymap =~# '^socrates' |
       \   call s:change_first_pho() |
       \ endif
     autocmd InsertLeave  *
-      \ if &keymap =~? '^socrates' |
+      \ if &keymap =~# '^socrates' |
       \   call s:change_last_sigma_when_leaving_insert() |
       \ endif
   augroup END
@@ -44,10 +44,11 @@ function! s:change_last_sigma() abort
 
   let l:char_before_cursor =
   \   s:get_exact_nth_char_from(getline('.'), charcol('.') - 3)
+  let l:is_cursor_at_line_end = s:is_cursor_at_line_end_in_insert_mode()
   " U+03C3: Small sigma, U+03C2: Final Sigma.
   if l:char_before_cursor ==# "\<char-0x03C3>"
     execute "normal! hhr\<char-0x03C2>ll"
-    if s:is_cursor_at_line_end_in_insert_mode()
+    if l:is_cursor_at_line_end
       call feedkeys("\<right>", 'nit')
     endif
   endif
