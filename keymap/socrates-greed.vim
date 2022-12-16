@@ -1,4 +1,4 @@
-let b:keymap_name = "Socrates-Greed"
+let b:keymap_name = "SocratesGreed"
 
 loadkeymap
 A	<char-0x0391>	Capital Alpha

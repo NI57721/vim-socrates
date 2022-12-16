@@ -8,21 +8,17 @@ if exists('g:socrates_smart_mode') && g:socrates_smart_mode
 endif
 
 function! SocratesToggle(keymap_suffix = '')
-  return
-  let l:keymap = 'Socrates' . a:keymap_suffix
+  let l:current_keymap = 'Socrates' . a:keymap_suffix
   if !exists('l:prev_keymap')
     let l:prev_keymap = &keymap
-    set keymap=l:keymap
-  elseif a:keymap !=? l:prev_keymap
-    let l:prev_keymap = keymap
-    set keymap=a:keymap
+    execute 'set keymap=' . l:current_keymap
+  elseif l:current_keymap ==? &keymap
+    execute 'set keymap=' . l:prev_kepmap
+    let l:prev_keymap = l:current_keymap
   else
-    set keymap=l:prev_keymap
-    let l:prev_keymap = 1
+    let l:prev_keymap = &keymap
+    execute 'set keymap=' . l:current_keymap
   endif
-
-  let l:prev_keymap = &keymap
-  if keymap ==? l:prev_keymap
 endfunction
 
 nnoremap <Plug>(socrates-normal) :<C-u>call SocratesToggle()

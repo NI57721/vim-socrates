@@ -3,13 +3,8 @@ let s:assert = themis#helper('assert')
 let s:scope  = themis#helper('scope')
 let s:funcs  = s:scope.funcs('autoload/socrates.vim')
 
-function! s:test_test() abort
-  call s:assert.equals(1+2, 2)
-endfunction
-
-function! s:toggle_keymap() abort
-  call s:assert.equals(1+2, 2)
-  set keymap=''
+function s:suite.toggle_keymap()
+  set keymap=
   call SocratesToggle()
   call s:assert.equals(&keymap, 'Socrates')
   call SocratesToggle()
@@ -30,7 +25,7 @@ function! s:toggle_keymap() abort
   call s:assert.equals(&keymap, 'SocratesGreed')
   call SocratesToggle('Greed')
   call s:assert.equals(&keymap, 'SocratesLatin')
-  set keymap=''
+  set keymap=
   call SocratesToggle('Latin')
   call s:assert.equals(&keymap, 'SocratesLatin')
   call SocratesToggle('Latin')
@@ -41,7 +36,7 @@ function! s:toggle_keymap() abort
   call s:assert.equals(&keymap, '')
 endfunction
 
-function! s:detect_if_rhos_have_any_signatures() abort
+function s:suite.detect_if_rhos_have_any_signatures()
   let l:simple_rhos = ["\<char-0x03A1>", "\<char-0x03C1>"]
   let l:rhos_with_signatures = [
   \   "\<char-0x1FE4>", "\<char-0x1FEC>", "\<char-0x1FEC>", "\<char-0x1FEC>",
@@ -56,7 +51,7 @@ function! s:detect_if_rhos_have_any_signatures() abort
   endfor
 endfunction
 
-function! s:get_nth_char_from_string() abort
+function s:suite.get_nth_char_from_string()
   let l:sample = 'fooＦＯＯ, barＢＡＲ.'
   let l:sample_chars = [
   \   'f', 'o', 'o', 'Ｆ', 'Ｏ', 'Ｏ', ',', ' ', 'b', 'a', 'r', 'Ｂ',
@@ -64,7 +59,7 @@ function! s:get_nth_char_from_string() abort
   \]
 
   for i in range(0, strchars(l:sample) - 1)
-    call s:assert.equals(l:l:sample_chars[i], s:funcs.get_nth_char_from(l:sample, i))
+    call s:assert.equals(l:sample_chars[i], s:funcs.get_nth_char_from(l:sample, i))
   endfor
 endfunction
 
