@@ -67,27 +67,27 @@ v	<char-0x03C9>	Small Omega
 
 
 " Ancient characters
-F/	<char-0x03DC>	Capital Digamma
-M/	<char-0x03FA>	Capital San
-Q/	<char-0x03D8>	Capital Koppa
-H/	<char-0x0370>	Capital Heta
-S/	<char-0x0372>	Capital Archaic Sampi
-SH/	<char-0x03F7>	Capital Sho
-Sh/	<char-0x03F7>	Capital Sho
-W/	<char-0x0376>	Capital Pamphylian Digamma
-Z/	<char-0x03E0>	Sampi
-ST/	<char-0x03DA>	Stigma
-St/	<char-0x03DA>	Stigma
-j/	<char-0x03F3>	Yot
-f/	<char-0x03DD>	Small Digamma
-m/	<char-0x03FB>	Small San
-q/	<char-0x03D9>	Small Koppa
-h/	<char-0x0371>	Small Heta
-s/	<char-0x0373>	Small Archaic Sampi
-z/	<char-0x03E1>	Small Sampi
-sh/	<char-0x03F8>	Small Sho
-st/	<char-0x03DB>	Small Stigma
-w/	<char-0x0377>	Small Pamphylian Digamma
+F\	<char-0x03DC>	Capital Digamma
+M\	<char-0x03FA>	Capital San
+Q\	<char-0x03D8>	Capital Koppa
+H\	<char-0x0370>	Capital Heta
+S\	<char-0x0372>	Capital Archaic Sampi
+SH\	<char-0x03F7>	Capital Sho
+Sh\	<char-0x03F7>	Capital Sho
+W\	<char-0x0376>	Capital Pamphylian Digamma
+Z\	<char-0x03E0>	Sampi
+ST\	<char-0x03DA>	Stigma
+St\	<char-0x03DA>	Stigma
+j\	<char-0x03F3>	Yot
+f\	<char-0x03DD>	Small Digamma
+m\	<char-0x03FB>	Small San
+q\	<char-0x03D9>	Small Koppa
+h\	<char-0x0371>	Small Heta
+s\	<char-0x0373>	Small Archaic Sampi
+z\	<char-0x03E1>	Small Sampi
+sh\	<char-0x03F8>	Small Sho
+st\	<char-0x03DB>	Small Stigma
+w\	<char-0x0377>	Small Pamphylian Digamma
 
 
 " Rhos with breathing marks
