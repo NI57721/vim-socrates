@@ -37,7 +37,7 @@ endfunction
 " Change a sigma with a final-sigma if you type one of punctuations in insert
 " mode.
 function! s:change_last_sigma() abort
-  let l:current_char = s:get_nth_char_from(getline('.'), charcol('.') - 2)
+  let l:current_char = s:get_exact_nth_char_from(getline('.'), charcol('.') - 2)
   if matchstr(s:punctuations, l:current_char) ==# ''
     return
   endif
@@ -56,7 +56,7 @@ endfunction
 " Add a rough breathing mark on a rho, if the rho has no breathing mark and is
 " at the beginning of a word.
 function! s:change_first_pho() abort
-  let l:current_char = s:get_nth_char_from(getline('.'), charcol('.') - 2)
+  let l:current_char = s:get_exact_nth_char_from(getline('.'), charcol('.') - 2)
   if !s:is_simple_rho(v:char) || matchstr(s:punctuations, l:current_char) ==# ''
     return
   endif
