@@ -31,6 +31,8 @@ N	<char-0x039D>	Capital Nu
 N/	<char-0x039D>	Capital Nu
 J	<char-0x039E>	Capital Xi
 J/	<char-0x039E>	Capital Xi
+X	<char-0x039E>	Capital Xi
+X/	<char-0x039E>	Capital Xi
 KS	<char-0x039E>	Capital Xi
 KS/	<char-0x039E>	Capital Xi
 Ks	<char-0x039E>	Capital Xi
@@ -55,8 +57,6 @@ PH	<char-0x03A6>	Capital Phi
 PH/	<char-0x03A6>	Capital Phi
 Ph	<char-0x03A6>	Capital Phi
 Ph/	<char-0x03A6>	Capital Phi
-X	<char-0x03A7>	Capital Chi
-X/	<char-0x03A7>	Capital Chi
 CH	<char-0x03A7>	Capital Chi
 CH/	<char-0x03A7>	Capital Chi
 Ch	<char-0x03A7>	Capital Chi
@@ -97,6 +97,8 @@ n	<char-0x03BD>	Small Nu
 n/	<char-0x03BD>	Small Nu
 j	<char-0x03BE>	Small Xi
 j/	<char-0x03BE>	Small Xi
+x	<char-0x03BE>	Small Xi
+x/	<char-0x03BE>	Small Xi
 ks	<char-0x03BE>	Small Xi
 ks/	<char-0x03BE>	Small Xi
 o	<char-0x03BF>	Small Omicron
@@ -113,12 +115,12 @@ t	<char-0x03C4>	Small Tau
 t/	<char-0x03C4>	Small Tau
 y	<char-0x03C5>	Small Upsilon
 y/	<char-0x03C5>	Small Upsilon
+u	<char-0x03C5>	Small Upsilon
+u/	<char-0x03C5>	Small Upsilon
 f	<char-0x03C6>	Small Phi
 f/	<char-0x03C6>	Small Phi
 ph	<char-0x03C6>	Small Phi
 ph/	<char-0x03C6>	Small Phi
-x	<char-0x03C7>	Small Chi
-x/	<char-0x03C7>	Small Chi
 ch	<char-0x03C7>	Small Chi
 ch/	<char-0x03C7>	Small Chi
 ps	<char-0x03C8>	Small Psi

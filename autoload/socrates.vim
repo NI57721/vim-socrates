@@ -1,5 +1,3 @@
-let s:punctuations = ",.'\";:? \<char-0x037E>\<char-0x0387>\<char-0x00FF>"
-
 function! socrates#enable_smart_mode() abort
   augroup Socrates
     autocmd!
@@ -38,7 +36,7 @@ endfunction
 " mode.
 function! s:change_last_sigma() abort
   let l:current_char = s:get_exact_nth_char_from(getline('.'), charcol('.') - 2)
-  if matchstr(s:punctuations, l:current_char) ==# ''
+  if !s:is_punctuation(l:current_char)
     return
   endif
 
@@ -58,7 +56,7 @@ endfunction
 " at the beginning of a word.
 function! s:change_first_pho() abort
   let l:current_char = s:get_exact_nth_char_from(getline('.'), charcol('.') - 2)
-  if !s:is_simple_rho(v:char) || matchstr(s:punctuations, l:current_char) ==# ''
+  if !s:is_simple_rho(v:char) || !s:is_punctuation( l:current_char)
     return
   endif
 
@@ -73,6 +71,10 @@ endfunction
 
 function! s:is_simple_rho(char) abort
   return a:char ==# "\<char-0x03A1>" || a:char ==# "\<char-0x03C1>"
+endfunction
+
+function! s:is_punctuation(char) abort
+  return matchstr(g:socrates_punctuations, a:char) !=# ''
 endfunction
 
 " This function counts both ASCII characters and multibyte characters as a

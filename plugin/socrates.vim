@@ -3,7 +3,11 @@ if exists('g:loaded_socrates') && g:loaded_socrates
 endif
 let g:loaded_socrates = v:true
 
-if exists('g:socrates_smart_mode') && g:socrates_smart_mode
+let g:socrates_punctuations =
+\   ",.'\";:? \<char-0x037E>\<char-0x0387>\<char-0x00FF>"
+
+if !exists('g:socrates_smart_mode') || g:socrates_smart_mode
+  let g:socrates_smart_mode = v:true
   call socrates#enable_smart_mode()
 endif
 
@@ -22,7 +26,7 @@ function! SocratesToggle(keymap_suffix = '')
   endif
 endfunction
 
-nnoremap <Plug>(socrates-normal) :<C-u>call SocratesToggle()<CR>
-nnoremap <Plug>(socrates-latin)  :<C-u>call SocratesToggle('latin')<CR>
-nnoremap <Plug>(socrates-greed)  :<C-u>call SocratesToggle('greed')<CR>
+nnoremap <Plug>(socrates)       :<C-u>call SocratesToggle()<CR>
+nnoremap <Plug>(socrates-latin) :<C-u>call SocratesToggle('latin')<CR>
+nnoremap <Plug>(socrates-greed) :<C-u>call SocratesToggle('greed')<CR>
 
