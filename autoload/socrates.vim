@@ -1,37 +1,26 @@
-
 let s:punctuations = ",.'\";:? \<char-0x037E>\<char-0x0387>\<char-0x00FF>"
 
-function! socrates#latinise_keymaps() abort
-  augroup Socrates
-    autocmd!
-    autocmd OptionSet keymap
-      \ if &keymap ==? 'socrates' |
-      \   call socrates#latinise_keymaps() |
-      \ endif
-  augroup END
-endfunction
-
-function! socrates#enable_smart_checker() abort
+function! socrates#enable_smart_mode() abort
   augroup Socrates
     autocmd!
     autocmd TextChangedI *
       \ if &keymap =~? '^socrates' |
-      \   call socrates#change_last_sigma() |
+      \   call s:change_last_sigma() |
       \ endif
     autocmd InsertCharPre *
       \ if &keymap =~? '^socrates' |
-      \   call socrates#change_first_pho() |
+      \   call s:change_first_pho() |
       \ endif
     autocmd InsertLeave  *
       \ if &keymap =~? '^socrates' |
-      \   call socrates#change_last_sigma_when_leaving_insert() |
+      \   call s:change_last_sigma_when_leaving_insert() |
       \ endif
   augroup END
 endfunction
 
 " Change a sigma with a final-sigma if cursor is just on the sigma that is the
 " last character of the current line when you leave from insert mode.
-function! socrates#change_last_sigma_when_leaving_insert() abort
+function! s:change_last_sigma_when_leaving_insert() abort
   if v:char !=# '' || !s:is_cursor_at_line_end_in_normal_mode()
     return
   endif
@@ -43,7 +32,7 @@ endfunction
 
 " Change a sigma with a final-sigma if you type one of punctuations in insert
 " mode.
-function! socrates#change_last_sigma() abort
+function! s:change_last_sigma() abort
   let l:current_char        = s:get_nth_char_from(getline('.'), charcol('.') - 2)
   if matchstr(s:punctuations, l:current_char) ==# ''
     return
@@ -62,7 +51,7 @@ endfunction
 
 " Add a rough breathing mark on a rho, if the rho has no breathing mark and is
 " at the beginning of a word.
-function! socrates#change_first_pho() abort
+function! s:change_first_pho() abort
   let l:current_char        = s:get_nth_char_from(getline('.'), charcol('.') - 2)
   if !s:is_simple_rho(v:char) || matchstr(s:punctuations, l:current_char) ==# ''
     return

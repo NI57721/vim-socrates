@@ -1,10 +1,44 @@
-let s:suite = themis#suite('Socrates')
+let s:suite  = themis#suite('Test for Socrates plugin')
 let s:assert = themis#helper('assert')
-let s:scope = themis#helper('scope')
-let s:funcs = s:scope.funcs('autoload/socrates.vim')
+let s:scope  = themis#helper('scope')
+let s:funcs  = s:scope.funcs('autoload/socrates.vim')
 
-function! s:suite.test_name() abort
-  call s:assert.equals(1 + 3, 4)
+function! s:test_test() abort
+  call s:assert.equals(1+2, 2)
+endfunction
+
+function! s:toggle_keymap() abort
+  call s:assert.equals(1+2, 2)
+  set keymap=''
+  call SocratesToggle()
+  call s:assert.equals(&keymap, 'Socrates')
+  call SocratesToggle()
+  call s:assert.equals(&keymap, '')
+  call SocratesToggle()
+  call s:assert.equals(&keymap, 'Socrates')
+  call SocratesToggle('Latin')
+  call s:assert.equals(&keymap, 'SocratesLatin')
+  call SocratesToggle()
+  call s:assert.equals(&keymap, 'Socrates')
+  call SocratesToggle('Latin')
+  call s:assert.equals(&keymap, 'SocratesLatin')
+  call SocratesToggle('Latin')
+  call s:assert.equals(&keymap, 'Socrates')
+  call SocratesToggle('Latin')
+  call s:assert.equals(&keymap, 'SocratesLatin')
+  call SocratesToggle('Greed')
+  call s:assert.equals(&keymap, 'SocratesGreed')
+  call SocratesToggle('Greed')
+  call s:assert.equals(&keymap, 'SocratesLatin')
+  set keymap=''
+  call SocratesToggle('Latin')
+  call s:assert.equals(&keymap, 'SocratesLatin')
+  call SocratesToggle('Latin')
+  call s:assert.equals(&keymap, '')
+  call SocratesToggle('Greed')
+  call s:assert.equals(&keymap, 'SocratesGreed')
+  call SocratesToggle('Greed')
+  call s:assert.equals(&keymap, '')
 endfunction
 
 function! s:detect_if_rhos_have_any_signatures() abort
