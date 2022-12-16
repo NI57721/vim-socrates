@@ -60,7 +60,7 @@ function s:suite.get_exact_nth_char_from_string()
 
   for i in range(0, strchars(l:sample) - 1)
     call s:assert.equals(
-    \   l:l:sample_chars[i], s:funcs.get_exact_nth_char_from(l:sample, i)
+    \   l:sample_chars[i], s:funcs.get_exact_nth_char_from(l:sample, i)
     \ )
   endfor
 endfunction
