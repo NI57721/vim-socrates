@@ -41,7 +41,7 @@ function s:suite.detect_if_rhos_have_any_signatures()
   let l:rhos_with_signatures = [
   \   "\<char-0x1FE4>", "\<char-0x1FEC>", "\<char-0x1FEC>", "\<char-0x1FEC>",
   \   "\<char-0x1FE5>", "\<char-0x1FE5>",
-  \]
+  \ ]
 
   for rho in l:simple_rhos
     call s:assert.true(s:funcs.is_simple_rho(rho))
@@ -51,15 +51,17 @@ function s:suite.detect_if_rhos_have_any_signatures()
   endfor
 endfunction
 
-function s:suite.get_nth_char_from_string()
+function s:suite.get_exact_nth_char_from_string()
   let l:sample = 'fooＦＯＯ, barＢＡＲ.'
   let l:sample_chars = [
   \   'f', 'o', 'o', 'Ｆ', 'Ｏ', 'Ｏ', ',', ' ', 'b', 'a', 'r', 'Ｂ',
   \   'Ａ', 'Ｒ', '.'
-  \]
+  \ ]
 
   for i in range(0, strchars(l:sample) - 1)
-    call s:assert.equals(l:sample_chars[i], s:funcs.get_nth_char_from(l:sample, i))
+    call s:assert.equals(
+    \   l:l:sample_chars[i], s:funcs.get_exact_nth_char_from(l:sample, i)
+    \ )
   endfor
 endfunction
 
