@@ -1,0 +1,43 @@
+name: CI
+
+on: ["push", "pull_request", "workflow_dispatch"]
+
+jobs:
+  test:
+    name: "${{ matrix.vim_type }} ${{ matrix.version }} on ${{ matrix.os }}"
+    strategy:
+      matrix:
+        vim_type: ["Vim", "Neovim"]
+        version: ["head", "stable"]
+        os: ["ubuntu-22.04"]
+        include:
+          - vim_type: "Vim"
+            version: "stable"
+            vim_version: "v8.2.0000"
+    runs-on: "${{ matrix.os }}"
+    steps:
+      - name: "Initialization"
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install libfuse2
+          echo "LD_PRELOAD=/lib/x86_64-linux-gnu/libgmodule-2.0.so" >> $GITHUB_ENV
+      - uses: "actions/checkout@v3"
+      - name: "Setup Vim"
+        id: "vim"
+        uses: "thinca/action-setup-vim@v1"
+        with:
+          vim_version: "${{ matrix.vim_version || matrix.version }}"
+          vim_type: "${{ matrix.vim_type }}"
+      - name: "Show Vim version"
+        run: |
+          ${{ steps.vim.outputs.executable }} --version
+      - name: Download vim-themis
+        run: |
+          git clone --depth 1 --branch v1.7.0 --single-branch https://github.com/thinca/vim-themis ~/themis
+      - name: 'Run test'
+        run: |
+          export PATH=~/vim/bin:$PATH
+          export PATH=~/themis/bin:$PATH
+          export THEMIS_VIM=vim
+          themis --reporter dot
+
