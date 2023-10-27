@@ -51,9 +51,9 @@ toggle keymaps between the current one and socrates-something you choose. My
 favourite is |socrates-greed|. To learn more about each keymap, see
 |socrates-keymaps| and |socrates-key-mappings|.
 >
-    nnoremap <leader>q <Plug>(socrates-greed)
-    nnoremap <leader>q <Plug>(socrates-latin)
-    nnoremap <leader>q <Plug>(socrates)
+    nnoremap <silent> <leader>q <Plug>(socrates-greed)
+    nnoremap <silent> <leader>q <Plug>(socrates-latin)
+    nnoremap <silent> <leader>q <Plug>(socrates)
 <
 
 

@@ -19,9 +19,7 @@ jobs:
       - name: "Initialization"
         run: |
           sudo apt-get update
-          sudo apt-get -y install libfuse2
-          echo "LD_PRELOAD=/lib/x86_64-linux-gnu/libgmodule-2.0.so" >> $GITHUB_ENV
-      - uses: "actions/checkout@v3"
+      - uses: "actions/checkout@v4"
       - name: "Setup Vim"
         id: "vim"
         uses: "thinca/action-setup-vim@v1"
