@@ -1,3 +1,18 @@
+function! socrates#toggle(keymap_suffix = '')
+  let l:current_keymap =
+  \   'socrates' . (a:keymap_suffix == '' ? '' : '-') . a:keymap_suffix
+  if !exists('s:prev_keymap')
+    let s:prev_keymap = &keymap
+    execute 'set keymap=' . l:current_keymap
+  elseif l:current_keymap ==? &keymap
+    execute 'set keymap=' . s:prev_keymap
+    let s:prev_keymap = l:current_keymap
+  else
+    let s:prev_keymap = &keymap
+    execute 'set keymap=' . l:current_keymap
+  endif
+endfunction
+
 function! socrates#enable_smart_mode() abort
   augroup Socrates
     autocmd!
