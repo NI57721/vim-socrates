@@ -46,7 +46,7 @@ USAGE                                                           *socrates-usage*
 
 Recommended settings~
 
-Add one of the three lines below in your .vimrc/init.vim, and then you can
+Add one of the three lines below in your vimrc/init.vim, and then you can
 toggle keymaps between the current one and socrates-something you choose. My
 favourite is |socrates-greed|. To learn more about each keymap, see
 |socrates-keymaps| and |socrates-key-mappings|.
@@ -226,12 +226,12 @@ Mixture of the two above.
 ==============================================================================
 VARIABLES                                                   *socrates-variables*
 
-let g:socrates_smart_mode                                *g:socrates_smart_mode*
+g:socrates_smart_mode                                    *g:socrates_smart_mode*
     Enable smart mode.
     It is set to v:true by default.
     To learn more about smart mode, see |socrates-smart-mode|.
 
-let g:socrates_punctuations                            *g:socrates_punctuations*
+g:socrates_punctuations                                *g:socrates_punctuations*
     Specifies Greek punctuations, which are used in |socrates-smart-mode|.
     It is set as below by default.
     ",.'\";:? \<char-0x037E>\<char-0x0387>\<char-0x00FF>"

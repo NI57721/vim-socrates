@@ -4,7 +4,7 @@ endif
 let g:loaded_socrates = v:true
 
 let g:socrates_punctuations =
-\   ",.'\";:? \<char-0x037E>\<char-0x0387>\<char-0x00FF>"
+  \   ",.'\";:? \<char-0x037E>\<char-0x0387>\<char-0x00FF>"
 
 if !exists('g:socrates_smart_mode') || g:socrates_smart_mode
   let g:socrates_smart_mode = v:true

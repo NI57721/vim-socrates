@@ -1,37 +1,39 @@
-name: CI
-
-on: ["push", "pull_request", "workflow_dispatch"]
+name: 'Test'
+on: ['push', 'pull_request', 'workflow_dispatch']
 
 jobs:
   test:
-    name: "${{ matrix.vim_type }} ${{ matrix.version }} on ${{ matrix.os }}"
+    name:
+      ${{ matrix.vim_type }} ${{ matrix.vim_version || matrix.version }}
+      on ${{ matrix.os }}
     strategy:
       matrix:
-        vim_type: ["Vim", "Neovim"]
-        version: ["head", "stable"]
-        os: ["ubuntu-22.04"]
+        vim_type: ['Vim', 'Neovim']
+        version: ['head', 'stable']
+        platform: ['Linux']
         include:
-          - vim_type: "Vim"
-            version: "stable"
-            vim_version: "v9.0.1499"
-    runs-on: "${{ matrix.os }}"
+          - vim_type: 'Vim'
+            version: 'stable'
+            vim_version: 'v9.0.1499'
+          - platform: 'Linux'
+            os: 'ubuntu-latest'
+            download: 'never'
+
+    runs-on: '${{ matrix.os }}'
     steps:
-      - name: "Initialization"
-        run: |
-          sudo apt-get update
-      - uses: "actions/checkout@v4"
-      - name: "Setup Vim"
-        id: "vim"
-        uses: "thinca/action-setup-vim@v1"
+      - uses: 'actions/checkout@v4'
+      - name: 'Setup Vim'
+        id: 'vim'
+        uses: 'thinca/action-setup-vim@v1'
         with:
-          vim_version: "${{ matrix.vim_version || matrix.version }}"
-          vim_type: "${{ matrix.vim_type }}"
-      - name: "Show Vim version"
-        run: |
-          ${{ steps.vim.outputs.executable }} --version
-      - name: Download vim-themis
-        run: |
-          git clone --depth 1 --branch v1.7.0 --single-branch https://github.com/thinca/vim-themis ~/themis
+          vim_version: '${{ matrix.vim_version || matrix.version }}'
+          vim_type: '${{ matrix.vim_type }}'
+      - name: 'Show Vim version'
+        run: '${{ steps.vim.outputs.executable }} --version'
+      - name: 'Download vim-themis'
+        run:
+          git clone --depth 1 --branch v1.7.0
+          --single-branch https://github.com/thinca/vim-themis ~/themis
       - name: 'Run test'
         run: |
           export PATH=~/vim/bin:$PATH
