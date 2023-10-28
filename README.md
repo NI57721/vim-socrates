@@ -1,5 +1,5 @@
 # vim-socrates
-![Test](./../../actions/workflows/main.yml/badge.svg)  
+![Test](./../../actions/workflows/test.yml/badge.svg)  
 A Vim/Neovim plugin for typing ancient Greek characters  
 ![screenshot](https://github.com/NI57721/vim-socrates/blob/assets/screenshot.gif?raw=true)
 
