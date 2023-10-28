@@ -13,7 +13,7 @@ jobs:
         include:
           - vim_type: "Vim"
             version: "stable"
-            vim_version: "v8.2.0000"
+            vim_version: "v9.0.1499"
     runs-on: "${{ matrix.os }}"
     steps:
       - name: "Initialization"
