@@ -279,6 +279,9 @@ typing in insert mode.
 ==============================================================================
 CHANGELOG                                                   *socrates-changelog*
 
+1.0.1   17 Jul 2025
+        - Fix bugs
+
 1.0.0   16 Dec 2022
         - First release
 

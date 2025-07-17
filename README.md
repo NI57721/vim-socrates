@@ -229,6 +229,8 @@ When you type a rho at the beginning of a word, replace the rho with that
 with a rough breathing mark.
 
 ## CHANGELOG
+- 1.0.1 (17 Jul 2025)  
+  Fix bugs
 - 1.0.0 (16 Dec 2022)  
   First release
 
