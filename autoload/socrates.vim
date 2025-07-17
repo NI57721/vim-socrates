@@ -108,3 +108,4 @@ endfunction
 function! s:is_cursor_at_line_end_in_insert_mode() abort
   return charcol('.') == getline('.') ->strchars() + 1
 endfunction
+
