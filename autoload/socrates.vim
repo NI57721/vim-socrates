@@ -95,6 +95,9 @@ endfunction
 " This function counts both ASCII characters and multibyte characters as a
 " single character.
 function! s:get_exact_nth_char_from(str, n) abort
+  if a:n < 0
+    return ''
+  endif
   return strgetchar(a:str, a:n) ->nr2char()
 endfunction
 
@@ -105,4 +108,3 @@ endfunction
 function! s:is_cursor_at_line_end_in_insert_mode() abort
   return charcol('.') == getline('.') ->strchars() + 1
 endfunction
-
