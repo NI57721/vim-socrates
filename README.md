@@ -234,6 +234,8 @@ When you type a rho at the beginning of a word, it is replaced with a rho bearin
 a rough breathing mark.
 
 ## CHANGELOG
+- 1.0.2 (2 Aug 2026)  
+  Add support for acute and grave accents on vowels with macrons
 - 1.0.1 (17 Jul 2025)  
   Fix bugs
 - 1.0.0 (16 Dec 2022)  
