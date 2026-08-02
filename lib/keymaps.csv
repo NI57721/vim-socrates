@@ -154,7 +154,11 @@ a[~_	<char-0x1F87>	Small Alpha with Rough breathing and Circumflex and with Iota
 A^	<char-0x1FB8>	Capital Alpha with Breve
 a^	<char-0x1FB0>	Small Alpha with Breve
 A-	<char-0x1FB9>	Capital Alpha with Macron
+A-`	<char-0x1FB9><char-0x0300>	Capital Alpha with Macron and Grave
+A-'	<char-0x1FB9><char-0x0301>	Capital Alpha with Macron and Acute
 a-	<char-0x1FB1>	Small Alpha with Macron
+a-`	<char-0x1FB1><char-0x0300>	Small Alpha with Macron and Grave
+a-'	<char-0x1FB1><char-0x0301>	Small Alpha with Macron and Acute
 
 
 " Epsilon with signatures
@@ -259,7 +263,11 @@ i[~	<char-0x1F37>	Small Iota with Rough breathing and Circumflex
 I^	<char-0x1FD8>	Capital Iota with Breve
 i^	<char-0x1FD0>	Small Iota with Breve
 I-	<char-0x1FD9>	Capital Iota with Macron
+I-`	<char-0x1FD9><char-0x0300>	Capital Iota with Macron and Grave
+I-'	<char-0x1FD9><char-0x0301>	Capital Iota with Macron and Acute
 i-	<char-0x1FD1>	Small Iota with Macron
+i-`	<char-0x1FD1><char-0x0300>	Small Iota with Macron and Grave
+i-'	<char-0x1FD1><char-0x0301>	Small Iota with Macron and Acute
 
 I"	<char-0x03AA>	Capital Iota with Diaeresis
 i"	<char-0x03CA>	Small Iota with Diaeresis
@@ -313,8 +321,12 @@ y[~	<char-0x1F57>	Small Upsilon with Rough breathing and Circumflex
 
 Y^	<char-0x1FE8>	Capital Upsilon with Breve
 y^	<char-0x1FE0>	Small Upsilon with Breve
-y-	<char-0x1FE1>	Small Upsilon with Macron
 Y-	<char-0x1FE9>	Capital Upsilon with Macron
+Y-`	<char-0x1FE9><char-0x0300>	Capital Upsilon with Macron and Grave
+Y-'	<char-0x1FE9><char-0x0301>	Capital Upsilon with Macron and Acute
+y-	<char-0x1FE1>	Small Upsilon with Macron
+y-`	<char-0x1FE1><char-0x0300>	Small Upsilon with Macron and Grave
+y-'	<char-0x1FE1><char-0x0301>	Small Upsilon with Macron and Acute
 
 Y"	<char-0x03AB>	Capital Upsilon with Diaeresis
 y"	<char-0x03CB>	Small Upsilon with Diaeresis
