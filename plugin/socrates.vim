@@ -14,4 +14,3 @@ endif
 nnoremap <Plug>(socrates)       <Cmd>call socrates#toggle()<CR>
 nnoremap <Plug>(socrates-latin) <Cmd>call socrates#toggle('latin')<CR>
 nnoremap <Plug>(socrates-greed) <Cmd>call socrates#toggle('greed')<CR>
-

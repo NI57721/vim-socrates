@@ -45,4 +45,3 @@ File.open(VIM_FNAME, 'w+') do |f|
     f.puts(permutate_signatures(*row).join("\n"))
   end
 end
-

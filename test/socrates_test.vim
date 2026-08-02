@@ -72,4 +72,3 @@ function s:suite.get_exact_nth_char_from_string_with_negative_values()
     \   '', s:funcs.get_exact_nth_char_from(sample, -1)
     \ )
 endfunction
-
