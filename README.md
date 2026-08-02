@@ -24,8 +24,6 @@ packer.startup(function() use 'NI57721/vim-socrates' end)
 ```
 
 ## USAGE
-Recommended settings.
-
 Add one of the following three lines to your `vimrc` or `init.vim`. You can then
 use it to toggle between your current keymap and the selected Socrates keymap.
 My favourite is `socrates-greed`. To learn more about each keymap, see
