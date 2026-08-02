@@ -35,6 +35,8 @@ P	<char-0x03A0>	Capital Pi
 P/	<char-0x03A0>	Capital Pi
 R	<char-0x03A1>	Capital Rho
 R/	<char-0x03A1>	Capital Rho
+W	<char-0x03A3>	Capital Sigma
+W/	<char-0x03A3>	Capital Sigma
 S	<char-0x03A3>	Capital Sigma
 S/	<char-0x03A3>	Capital Sigma
 T	<char-0x03A4>	Capital Tau
@@ -395,8 +397,24 @@ a^	<char-0x1FB0>	Small Alpha with Breve
 a^/	<char-0x1FB0>	Small Alpha with Breve
 A-	<char-0x1FB9>	Capital Alpha with Macron
 A-/	<char-0x1FB9>	Capital Alpha with Macron
+A-`	<char-0x1FB9><char-0x0300>	Capital Alpha with Macron and Grave
+A-`/	<char-0x1FB9><char-0x0300>	Capital Alpha with Macron and Grave
+A`-	<char-0x1FB9><char-0x0300>	Capital Alpha with Macron and Grave
+A`-/	<char-0x1FB9><char-0x0300>	Capital Alpha with Macron and Grave
+A-'	<char-0x1FB9><char-0x0301>	Capital Alpha with Macron and Acute
+A-'/	<char-0x1FB9><char-0x0301>	Capital Alpha with Macron and Acute
+A'-	<char-0x1FB9><char-0x0301>	Capital Alpha with Macron and Acute
+A'-/	<char-0x1FB9><char-0x0301>	Capital Alpha with Macron and Acute
 a-	<char-0x1FB1>	Small Alpha with Macron
 a-/	<char-0x1FB1>	Small Alpha with Macron
+a-`	<char-0x1FB1><char-0x0300>	Small Alpha with Macron and Grave
+a-`/	<char-0x1FB1><char-0x0300>	Small Alpha with Macron and Grave
+a`-	<char-0x1FB1><char-0x0300>	Small Alpha with Macron and Grave
+a`-/	<char-0x1FB1><char-0x0300>	Small Alpha with Macron and Grave
+a-'	<char-0x1FB1><char-0x0301>	Small Alpha with Macron and Acute
+a-'/	<char-0x1FB1><char-0x0301>	Small Alpha with Macron and Acute
+a'-	<char-0x1FB1><char-0x0301>	Small Alpha with Macron and Acute
+a'-/	<char-0x1FB1><char-0x0301>	Small Alpha with Macron and Acute
 E]	<char-0x1F18>	Capital Epsilon with Smooth breathing
 E]/	<char-0x1F18>	Capital Epsilon with Smooth breathing
 E[	<char-0x1F19>	Capital Epsilon with Rough breathing
@@ -759,8 +777,24 @@ i^	<char-0x1FD0>	Small Iota with Breve
 i^/	<char-0x1FD0>	Small Iota with Breve
 I-	<char-0x1FD9>	Capital Iota with Macron
 I-/	<char-0x1FD9>	Capital Iota with Macron
+I-`	<char-0x1FD9><char-0x0300>	Capital Iota with Macron and Grave
+I-`/	<char-0x1FD9><char-0x0300>	Capital Iota with Macron and Grave
+I`-	<char-0x1FD9><char-0x0300>	Capital Iota with Macron and Grave
+I`-/	<char-0x1FD9><char-0x0300>	Capital Iota with Macron and Grave
+I-'	<char-0x1FD9><char-0x0301>	Capital Iota with Macron and Acute
+I-'/	<char-0x1FD9><char-0x0301>	Capital Iota with Macron and Acute
+I'-	<char-0x1FD9><char-0x0301>	Capital Iota with Macron and Acute
+I'-/	<char-0x1FD9><char-0x0301>	Capital Iota with Macron and Acute
 i-	<char-0x1FD1>	Small Iota with Macron
 i-/	<char-0x1FD1>	Small Iota with Macron
+i-`	<char-0x1FD1><char-0x0300>	Small Iota with Macron and Grave
+i-`/	<char-0x1FD1><char-0x0300>	Small Iota with Macron and Grave
+i`-	<char-0x1FD1><char-0x0300>	Small Iota with Macron and Grave
+i`-/	<char-0x1FD1><char-0x0300>	Small Iota with Macron and Grave
+i-'	<char-0x1FD1><char-0x0301>	Small Iota with Macron and Acute
+i-'/	<char-0x1FD1><char-0x0301>	Small Iota with Macron and Acute
+i'-	<char-0x1FD1><char-0x0301>	Small Iota with Macron and Acute
+i'-/	<char-0x1FD1><char-0x0301>	Small Iota with Macron and Acute
 I"	<char-0x03AA>	Capital Iota with Diaeresis
 I"/	<char-0x03AA>	Capital Iota with Diaeresis
 i"	<char-0x03CA>	Small Iota with Diaeresis
@@ -881,10 +915,26 @@ Y^	<char-0x1FE8>	Capital Upsilon with Breve
 Y^/	<char-0x1FE8>	Capital Upsilon with Breve
 y^	<char-0x1FE0>	Small Upsilon with Breve
 y^/	<char-0x1FE0>	Small Upsilon with Breve
-y-	<char-0x1FE1>	Small Upsilon with Macron
-y-/	<char-0x1FE1>	Small Upsilon with Macron
 Y-	<char-0x1FE9>	Capital Upsilon with Macron
 Y-/	<char-0x1FE9>	Capital Upsilon with Macron
+Y-`	<char-0x1FE9><char-0x0300>	Capital Upsilon with Macron and Grave
+Y-`/	<char-0x1FE9><char-0x0300>	Capital Upsilon with Macron and Grave
+Y`-	<char-0x1FE9><char-0x0300>	Capital Upsilon with Macron and Grave
+Y`-/	<char-0x1FE9><char-0x0300>	Capital Upsilon with Macron and Grave
+Y-'	<char-0x1FE9><char-0x0301>	Capital Upsilon with Macron and Acute
+Y-'/	<char-0x1FE9><char-0x0301>	Capital Upsilon with Macron and Acute
+Y'-	<char-0x1FE9><char-0x0301>	Capital Upsilon with Macron and Acute
+Y'-/	<char-0x1FE9><char-0x0301>	Capital Upsilon with Macron and Acute
+y-	<char-0x1FE1>	Small Upsilon with Macron
+y-/	<char-0x1FE1>	Small Upsilon with Macron
+y-`	<char-0x1FE1><char-0x0300>	Small Upsilon with Macron and Grave
+y-`/	<char-0x1FE1><char-0x0300>	Small Upsilon with Macron and Grave
+y`-	<char-0x1FE1><char-0x0300>	Small Upsilon with Macron and Grave
+y`-/	<char-0x1FE1><char-0x0300>	Small Upsilon with Macron and Grave
+y-'	<char-0x1FE1><char-0x0301>	Small Upsilon with Macron and Acute
+y-'/	<char-0x1FE1><char-0x0301>	Small Upsilon with Macron and Acute
+y'-	<char-0x1FE1><char-0x0301>	Small Upsilon with Macron and Acute
+y'-/	<char-0x1FE1><char-0x0301>	Small Upsilon with Macron and Acute
 Y"	<char-0x03AB>	Capital Upsilon with Diaeresis
 Y"/	<char-0x03AB>	Capital Upsilon with Diaeresis
 y"	<char-0x03CB>	Small Upsilon with Diaeresis
